@@ -13,3 +13,5 @@ Here you'll find:
 - Solved exercises: every single file used to solve them;
 - Notes about the content learned;
 - Challenges related to the content learned until its solution;
+
+:exclamation: Be aware that all notes are written in brazilian portuguese.
