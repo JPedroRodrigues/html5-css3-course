@@ -5,30 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de Texto</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais Formatações</h1>
+
     <h2>Negrito/Destaque</h2>
-    <p>
-        Termo em <b>negrito</b> usando a tag &lt;b&gt; (sem semântica).
-    </p>
-    <p>
-        Termo em <strong>destaque</strong> usando a tag &lt;strong&gt; (semântica).
-    </p>
+    <p>Termo em <b>negrito</b> usando a tag &lt;b&gt; (sem semântica).</p>
+    <p>Termo em <strong>destaque</strong> usando a tag &lt;strong&gt; (semântica).</p>
+
     <h2>Itálico/Ênfase</h2>
-    <p>
-        Nesta frase, existe um <i>termo em itálico</i> usando a tag &lt;i&gt; (sem semântica).
-    </p>
-    <p>
-        Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).
-    </p>
+    <p>Nesta frase, existe um <i>termo em itálico</i> usando a tag &lt;i&gt; (sem semântica).</p>
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
     <h2>Texto Marcado</h2>
-    <p>
-        Podemos também criar <mark style="background-color: rgb(0, 255, 221);">um texto marcado</mark> usando a tag semântica &lt;mark&gt;.
-    </p>
-    <p>
-        E no outro parágrafo existe um <mark>texto marcado</mark> no final.
-    </p>
+    <p> Podemos também criar <mark>um texto marcado</mark> usando a tag semântica &lt;mark&gt;.</p>
+    <p>E no outro parágrafo existe um <mark>texto marcado</mark> no final.</p>
+    <p>Mais um parágrafo <mark>com marcação</mark>.</p>
+
+    <h2>Texto Grande e Pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.</p>
+
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar <del>um texto como deletado</del>, indicando que ele permanece no texto, portanto, deve ser lido, mas que não deve ser considerado. Para isso, usamos a tag &lt;del&gt;.</p>
+    
+    <h2>Texto Inserido</h2>
+    <p>Podemos marcar o <ins>texto como inserido</ins>, dando a devida ênfase a ele. Para isso usamos a tag &lt;ins&gt; ao invés da tag &lt;u&gt; (não semântica).</p>
+
+    <h2>Texto Sobrescrito</h2>
+    <p>Para fazermos um texto sobrescrito. Eis a equação x<sup>2</sup> + 3 = 7.</p>
+
+    <h2>Texto Subscrito</h2>
+
+    <p>Vamos falar de água: H<sub>2</sub>O.</p>
 
 </body>
 </html>
