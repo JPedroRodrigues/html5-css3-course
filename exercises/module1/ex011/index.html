@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir este site em diferente dispositivos ou simplesmente aumente ou diminua o tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto em tamanho maior, apropriado para telas grandes">
+    </picture>
+
+    <h1>Vamos Reproduzir Áudio</h1>
+    <p>Podemos rodar qualquer tipo de aúdio usando HTML5</p>
+
+    <h2>Tag &lt;audio&gt; utilizada de maneira simples</h2>
+    <audio src="midia/oooh-my-god-vine-mp3cut.mp3" controls autoplay></audio></li>
+
+    <h2>Tag &lt;audio&gt; utilizada com &lt;source&gt;</h2>
+    <audio preload="metadata" controls>
+        <source src="midia/sequence-01_fIoH5lQ.mp3" type="audio/mpeg">
+        <p>Para fazer o download, <a href="midia/sequence-01_fIoH5lQ.mp3" download="sequence-01_fIoH5lQ.mp3" type="audio/mpeg"> clique aqui</a>.</p>
+    </audio>
+    
+    <audio preload="metadata" controls loop>
+        <source src="midia/epic-sax-guy.mp3" type="audio/mpeg">
+    </audio>
+
+    <br>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/vine-boom.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/fart-with-reverb.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
