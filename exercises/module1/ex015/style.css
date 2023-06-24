@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/*Regra charset para evitar questões com acentuação*/
+
+body {
+    background-color: rgb(45, 45, 45);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+h1 {
+    color: rgb(242, 56, 56);
+    font-size: 1.5em;
+}
+h2 {
+    font-size: 1.2em;
+}
+p {
+    text-align: justify;
+}
+
+a {
+    color: greenyellow;
+}
