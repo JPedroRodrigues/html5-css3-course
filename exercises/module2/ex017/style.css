@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    background-color: #F2C6C2;
+    font-size: 1.5em;
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 10px 10px 20px #bb99969d;
+}
+
+h1, h2 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: #F2B263;
+    text-align: center;
+}
+
+h2 {
+    color: #86A69D;
+}
+
+p {
+    text-align: justify;
+}
