@@ -34,6 +34,10 @@ body {
     font-family: var(--fonte_padrao);
 }
 
+a.externo::after {
+    content: '\1F517';
+}
+
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     background-color: var(--cor4);
@@ -46,6 +50,7 @@ header {
 header > h1{
     font-family: var(--fonte-destaque);
     font-size: 3em;
+    font-weight: normal;
     padding: 0px 10px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.455);
 }
@@ -55,6 +60,7 @@ header > p {
     font-size: 1.2em;
     max-width: 500px;
     margin: auto;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -65,7 +71,7 @@ nav {
 }
 
 nav > a {
-    color: white;
+    color: var(--cor1);
     text-decoration: none;
     font-weight: bold;
     padding: 10px;
@@ -125,10 +131,12 @@ main img {
 main h1 {
     color: var(--cor5);
     font-family: var(--fonte-android);
+    font-weight: normal;
 }
 
 main h2 {
     font-family: var(--fonte-android);
+    font-weight: normal;
     font-size: 1.2em;
     color: var(--cor4);
     background-image: linear-gradient(to right, var(--cor1), transparent);
@@ -141,12 +149,56 @@ main img.pequena {
     max-width: 350px;
 }
 
-main iframe {
-    display: block;
-    margin: auto;
+div.video {
+    background-color: var(--cor4);
+    padding: 30px;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 55%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor0);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.112);
+}
+
+aside > h3 {
+    color: white;
+    background-color: var(--cor4);
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2705\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
     color: white;
     background-color: var(--cor5);
+    text-align: center;
+    padding: 10px;
+}
+
+footer > a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > a:hover {
+    text-decoration: underline;
 }
