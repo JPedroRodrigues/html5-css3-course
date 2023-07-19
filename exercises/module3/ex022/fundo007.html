@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container {
+            position: relative;
+            height: 97vh;
+
+            background: purple url(imagens/target001.png) no-repeat/* color image position repeat size* attachment */;
+            background-size: 100% 100%;
+            padding: 10px;
+        }
+
+        #content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 300px;
+            width: 300px;
+            background: yellow url(imagens/target001.png) no-repeat center center;
+            background-size: 100% 100%;
+            /*margin: auto; Alinhamento horizontal */
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="content"></article>
+    </section>
+</body>
+</html>
