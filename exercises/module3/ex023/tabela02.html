@@ -9,14 +9,45 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1, p {
+            text-align: center;
+        }
+
         table {
             width: 500px;
             border-collapse: collapse;
+            margin: auto;
+            position: relative;
+        }
+
+        caption {
+            color: white;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #ffa500;
+            border-radius: 10px 10px 0px 0px;
+            border: 1px solid black;
         }
 
         thead, tfoot {
             background-color: brown;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: brown;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: rgb(112, 128, 144);
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
         }
 
         td, th {
@@ -33,10 +64,11 @@
     <h1>Tags semanticas para tabelas grandes (e pequenas também)</h1>
     <p>Dados obtidos a partir do <a href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o" target="_blank" rel="external noopener">Wikipedia</a>.</p>
     <table>
+        <caption>População por Estado Brasileiro</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -151,7 +183,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero">Número muito grande</td>
             </tr>
         </tfoot>
