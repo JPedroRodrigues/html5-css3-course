@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Colgroup</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: cadetblue;
+        }
+
+        tr.destaque {
+            background-color: rgb(176, 232, 199);
+        }
+
+        col.cnome {
+            background-color: rgb(176, 232, 199);
+        }
+
+        col.cidade {
+            background-color: rgb(176, 232, 199);
+        }
+
+        col.cgroup {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <caption>Cadastro</caption>
+
+        <colgroup>
+            <col class="cnome">
+            <!--
+            <col class="csexo">
+            <col class="cidade">
+            -->
+            <col class="cgroup" span="2">
+            <col class="cprof">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>46</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Antônio Cézar</td>
+                <td>M</td>
+                <td>38</td>
+                <td>Encanador</td>
+            </tr>
+            <tr>
+                <td>Larissa Paola</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Vendedora</td>
+            </tr>
+            <tr>
+                <td>Minerva Antunes</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Psicóloga</td>
+            </tr>
+            <tr class="destaque">
+                <td>Raimundo Tadeu</td>
+                <td>M</td>
+                <td>40</td>
+                <td>Vidraceiro</td>
+            </tr>
+            <tr>
+                <td>Thiago Lucas</td>
+                <td>M</td>
+                <td>33</td>
+                <td>Mecânico</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
