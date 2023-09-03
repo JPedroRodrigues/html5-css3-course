@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    min-height: 100vh;
+    background: linear-gradient(45deg,#ddb4f6, #8dd0fc)no-repeat fixed;
+    background-size: cover;
+}
+
+body a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    /* background-color: black; */
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+#profile {
+    padding: 30px;
+}
+
+#profile > img{
+    display: block;
+    margin: auto;
+    width: 300px;
+    border-radius: 50%;
+}
+
+#profile h1 {
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    padding: 10px;
+}
+
+#profile a:hover {
+    text-decoration: underline;
+}
+
+/* Links da lista e display flex */
+
+/* 
+1°: Organizando os botões em colunas
+    Flex trabalha com  os elementos dentro da caixa.
+    Por padrão, o flex-direction é igual a row. Se eu colocar em column, terei os elementos da caixa dispostos verticalmente, como  uma coluna. Para adicionar espaços entre estes elementos, usei o gap. Deste modo, não preciso adicionar um margin ou padding. 
+    
+2°: Organizando a posição dos elementos dentro da tag <a>
+    Usando o display flex, fazemos com que a tag <a>, que é inline-block por padrão (ocupa somente o espaço do conteúdo) passa a ocupar todo o espaço da caixa (da tag <li>, da lista). Assim, posso centralizar o texto do modo como preferir.
+ */
+
+#links {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#links li a{
+    /* border: 1px solid red; */
+
+    display: flex;
+    /* Centraliza os elementos seguindo uma linha horizontal imaginária */
+    align-items: center;
+    /* Centraliza os elementos seguinto uma linha vertical */
+    justify-content: center;
+    padding: 16px 24px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    
+    /* Efeito embaçado */
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    transition-duration: 1s;
+}
+
+#links a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+
