@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 1</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 20% 1fr 10%;
+
+            grid-template-areas: 
+            'header header'
+            'main aside'
+            'footer footer'
+            ;
+        }
+
+        header {
+            background-color: lightblue;
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+            grid-area: footer;
+        }
+
+        main {
+            background-color: lightcoral;
+            grid-area: aside;
+        }
+
+        aside {
+            background-color: lightseagreen;
+            grid-column: 2/3;
+
+            grid-area: main;
+        }
+
+        footer {
+            background-color: lightgreen;
+            grid-column: 1/3;
+
+            grid-area: header;
+        }
+    </style>
+</head>
+<body class="container">
+    <header>Aoba</header>
+    <main>Aye</main>
+    <aside>Aoi</aside>
+    <footer>Ahoi</footer>
+</body>
+</html>
