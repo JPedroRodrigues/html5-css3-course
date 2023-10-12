@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Telefones e E-mails</h1>
+    <form action="">
+        <fieldset>
+            <legend>Dados de usuário</legend>
+            <p>
+                <label for="telefone">Telefone: </label>
+                <!-- RegEx utilizado para aceitar números em um formato especificado -->
+                <input type="tel" name="telefone" id="telefone" pattern="^[0-9]{4}-[0-9]{4}$">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
