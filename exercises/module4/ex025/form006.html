@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output em HTML</title>
+</head>
+<body>
+    <h1>Formulários e Output</h1>
+    <form action="cadastro.php" method="get" autocomplete="off">
+        <p>
+            <label for="in1">1º número:</label>
+            <input type="number" name="n1" id="in1"
+            oninput="res.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="in2">2º Número:</label>
+            <input type="number" name="n2" id="in2"
+            oninput="res.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="res">Soma:</label>
+            <output name="res" id="res">0</output>
+        </p>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="range">Número:</label>
+            <input type="range" name="range" id="range" min="0" max="10" value="5" oninput="val.innerHTML = Number(range.value)">
+            <output id="val">5</output>
+        </p>
+    </form>
+</body>
+</html>
